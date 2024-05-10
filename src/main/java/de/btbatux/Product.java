@@ -30,7 +30,7 @@ public class Product {
 
 
 
-    @OneToOne  //1'e 1 ilişki.
+    @OneToOne(fetch = FetchType.LAZY)  //1'e 1 ilişki. //Tembel yükle ihtiyaç oldukça join işlemi yap.
     @JoinColumn(name = "product_code_id",referencedColumnName = "code_id")
     private Code code;
 
