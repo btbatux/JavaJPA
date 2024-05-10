@@ -49,6 +49,18 @@ Proje, aşağıdaki sınıfları içermektedir:
 
 5. Proje dizinindeki `Main.java` dosyasını çalıştırarak örnek veritabanı işlemlerini gerçekleştirin.
 
+## İlişkiler
+
+Bu projede aşağıdaki ilişki türleri uygulanmıştır:
+
+- **One-to-One İlişki**: `Product` ve `Code` sınıfları arasında birbirine bağlıdır. Her ürünün bir kodu vardır ve her kod bir ürüne aittir.
+
+- **Many-to-One İlişki**: `Product` ve `Supplier` sınıfları arasında bu ilişki bulunur. Bir tedarikçinin birden çok ürünü olabilir, ancak her ürün bir tedarikçiye aittir.
+
+- **One-to-Many İlişki**: `Category` ve `Product` sınıfları arasında bu ilişki mevcuttur. Bir kategorinin birden çok ürünü olabilir, ancak her ürün bir kategoriye aittir.
+
+- **Many-to-Many İlişki**: `Product` ve `Color` sınıfları arasında bu ilişki bulunur. Bir ürün birden çok renge sahip olabilir ve bir renk birden çok ürüne ait olabilir.
+
 ## Notlar
 
 - Proje, PostgreSQL veritabanı kullanılarak oluşturulmuştur. Ancak, farklı bir veritabanı kullanmak isterseniz, 
