@@ -36,18 +36,18 @@ public class Product {
 
 
 
-    @ManyToOne //Çoğa 1 ilişki.
+    @ManyToOne(fetch = FetchType.LAZY) //Çoğa 1 ilişki.
     @JoinColumn(name ="product_supplier_id",referencedColumnName = "supplier_id") //foreign key
     private Supplier supplier;
 
 
 
-    @ManyToOne //Çoğa 1 ilişki.
+    @ManyToOne(fetch = FetchType.LAZY) //Çoğa 1 ilişki.
     @JoinColumn(name ="product_category_id",referencedColumnName = "category_id")
     private Category category;
 
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name ="pro2colors", joinColumns = {@JoinColumn(name="pro2color_product_id")}, inverseJoinColumns ={@JoinColumn(name ="pro2color_color_id")})
     private List<Color>colorList;
 

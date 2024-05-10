@@ -79,7 +79,7 @@ public class Main {
 */
 
         Product product = entityManager.find(Product.class,1);
-        System.out.println(product.getColorList().toString());
+        System.out.println(product.getName());
 
 
         entityManager.getTransaction().commit();
