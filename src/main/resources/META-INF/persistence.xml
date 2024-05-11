@@ -30,7 +30,8 @@
         hangi sürücüyü kullanacağını, veritabanı işlemlerinin nasıl yapılandırılacağını ve
         JPA öznitelikleri gibi bir dizi özelliği belirtir.
         Bu dosya, Java EE veya Jakarta EE
-        uygulamalarında veritabanı işlemlerini yapılandırmak için temel bir yapı taşıdır.-->
+        uygulamalarında veritabanı işlemlerini yapılandırmak için temel bir yapı taşıdır.
+        POM dosyası, Maven projesinin yapılandırma ve bağımlılıklarını tanımlayan bir dosyadır.-->
 
 
     </persistence-unit>
